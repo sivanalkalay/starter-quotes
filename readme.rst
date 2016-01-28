@@ -1,3 +1,9 @@
+Sivan Alkalay
+Victor Van
+
+conventions: allman style
+
+
 #######################
 Starter Webapp - Quotes
 #######################
