@@ -10,7 +10,8 @@
  */
 class First extends Application {
 
-    function __construct() {
+    function __construct() 
+    {
         parent::__construct();
     }
 
@@ -18,7 +19,18 @@ class First extends Application {
     //  The normal pages
     //-------------------------------------------------------------
 
-    function index() {
+    function index() 
+    {
+        $this->data['pagebody'] = 'justone'; // this is the view we want shown
+        $record = $this->quotes->first(); //this will grab the first quote 
+        $this->data = array_merge($this->data, $record);
+        $this->render();
+    }
+    //-------------------------------------------------------------
+    //  This will call on the bob monkhouse quote.
+    //-------------------------------------------------------------
+    function zzz() 
+    {
         $this->data['pagebody'] = 'justone'; // this is the view we want shown
         $record = $this->quotes->first(); //this will grab the first quote 
         $this->data = array_merge($this->data, $record);
