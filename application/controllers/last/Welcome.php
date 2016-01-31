@@ -27,5 +27,5 @@ class Welcome extends Application {
         $this->render();
     }
 }
-/* End of file Welcome.php */
-/* Location: application/controllers/last/Welcome.php */
+/* End of file Last.php */
+/* Location: application/controllers/last/Last.php */
