@@ -54,6 +54,8 @@ $route['dunno'] = function() {
     die(); // and we don't have to go any further
 };
 
+$route['comp(\d+)/(:any)'] = 'Wise/bingo';
+
 
 
 
